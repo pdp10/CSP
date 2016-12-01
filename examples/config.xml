@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : config1.xml
+    Created on : Thu 2007.06.21 at 05:24:15 AM CEST
+    Author     : Piero Dalle Pezze
+    Description:
+        This is a configuration file
+-->
+
+<!DOCTYPE words SYSTEM "config.dtd">
+<configuration>
+    <config N = "15"/>
+    <config D = "10"/>
+    <config d = "0.4f"/>
+    <config T = "0.0f"/>
+    <config Nstep = "1"/>
+    <config Dstep = "1"/>
+    <config dstep = "0.1f"/>
+    <config Tstep = "0.05f"/>
+    <config testParameter = "T"/>
+    <config nTests = "20"/>
+    <config nIterations = "100"/>
+    <config valueHeuristic = "-1"/>
+    <config variableHeuristic = "2"/>
+</configuration>
+
+<!-- end config1.xml -->

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : config.dtd
+    Created on : 21.6.2007, 00:05
+    Author     : Piero Dalle Pezze
+    Description:
+        This is the description of a configuration file.
+-->
+
+<!ELEMENT configuration (N,D,d,T,Nstep,Dstep,dstep,Tstep,testParameter,nTests,
+                         nIterations,valueHeuristic,variableHeuristic)>
+<!-- The number of variables [2..) -->
+<!ELEMENT N (#PCDATA)>
+<!-- The number of domain elements [2..) -->
+<!ELEMENT D (#PCDATA)>
+<!-- The density of the problem [0.0f .. 1.0f] -->
+<!ELEMENT d (#PCDATA)>
+<!-- The tightness of the problem [0.0f .. 1.0f) -->
+<!ELEMENT T (#PCDATA)>
+<!-- The step of N (to increase/decrease the difficulty of the problem [1..) -->
+<!ELEMENT Nstep (#PCDATA)>
+<!-- The step of D (to increase/decrease the difficulty of the problem [1..) -->
+<!ELEMENT Dstep (#PCDATA)>
+<!-- The step of d (to increase/decrease the difficulty of the problem (0.0f .. 1.0f) -->
+<!ELEMENT dstep (#PCDATA)>
+<!-- The step of T (to increase/decrease the difficulty of the problem (0.0f .. 1.0f) -->
+<!ELEMENT Tstep (#PCDATA)>
+<!-- The parameter to change during the progress of test [N,D,d,T] -->
+<!ELEMENT testParameter (#PCDATA)>
+<!-- The number of tests [1..) -->
+<!ELEMENT nTests (#PCDATA)>
+<!-- The number of iterations for each test [1..) -->
+<!ELEMENT nIterations (#PCDATA)>
+<!-- The value-heuristic [-4..-1]
+   NATURAL_VALUE_HEURISTIC = -1;
+   MINIMUM_VALUE_HEURISTIC = -2;
+   MAXIMUM_VALUE_HEURISTIC = -3;
+   MEDIAN_VALUE_HEURISTIC  = -4;
+-->
+<!ELEMENT valueHeuristic (#PCDATA)>
+<!-- The variables-heuristic [1..4] 
+   NATURAL_VARIABLE_HEURISTIC          = 1;
+   MOST_CONSTRAINED_VARIABLE_HEURISTIC = 2;
+   RANDOM_VARIABLE_HEURISTIC           = 3;
+   MINIMUM_DOMAIN_VARIABLE_HEURISTIC   = 4;
+-->
+<!ELEMENT variableHeuristic (#PCDATA)>
+
+<!-- end config.dtd -->
